@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lanchonete do Ruan — Hambúrguer, Pastel e Muito Mais</title>
+<meta name="description" content="Hambúrguer artesanal, pastel crocante, refeições completas e bebidas geladas na Lanchonete do Ruan. Faça seu pedido pelo WhatsApp." />
+<meta property="og:title" content="Lanchonete do Ruan" />
+<meta property="og:description" content="O sabor do bairro: hambúrguer, pastel, pratos feitos e bebidas. Peça agora pelo WhatsApp." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="img/logo-ruan.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <img src="img/logo-ruan.png" alt="Lanchonete do Ruan" width="48" height="48" />
+      <span class="brand-name">DO RUAN</span>
+    </a>
+    <a class="btn btn-primary btn-sm" data-whatsapp href="#">Pedir Agora</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="tag">Hamburgueria &amp; Lanchonete</span>
+        <h1>O SABOR QUE<br /><span class="orange">ACENDE A NOITE</span></h1>
+        <p>Hambúrguer artesanal na chapa, pastel crocante na hora, refeições completas e bebidas geladas. Tudo com o jeitinho do bairro.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-whatsapp href="#">Fazer Pedido</a>
+          <a class="btn btn-ghost" href="#cardapio">Ver Cardápio</a>
+        </div>
+        <div class="hero-meta">
+          <span>🕒 Terça a Domingo</span>
+          <span>📍 Vila Maria, SP</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/hero-burger.jpg" alt="Hambúrguer artesanal duplo com queijo derretido" width="1024" height="1024" />
+        <span class="badge">Mais Pedido</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>OS DESTAQUES DA CASA</h2>
+      <div class="grid grid-4" id="destaques"></div>
+    </div>
+  </section>
+
+  <section class="section darker" id="cardapio">
+    <div class="container">
+      <h2>NOSSO CARDÁPIO</h2>
+      <div class="filters" id="filtros"></div>
+      <div class="grid grid-3" id="cardapio-lista"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card local">
+        <div>
+          <h2 class="left">ONDE ESTAMOS</h2>
+          <p class="lead">Rua das Flores, 123 — Vila Maria, São Paulo - SP</p>
+          <div class="horarios">
+            <div><h4>Terça a Sábado</h4><p>18h às 23h30</p></div>
+            <div><h4>Domingo</h4><p>17h às 22h</p></div>
+            <div><h4>Segunda</h4><p>Fechado</p></div>
+          </div>
+        </div>
+        <div class="local-actions">
+          <a class="btn btn-primary btn-lg" data-whatsapp href="#">Chamar no WhatsApp</a>
+          <a class="btn btn-ghost btn-lg" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+das+Flores%2C+123%2C+S%C3%A3o+Paulo%2C+SP">Ver no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-name">LANCHONETE DO RUAN</p>
+    <p class="muted">Feito com carinho no bairro desde 2012.</p>
+    <p class="tiny muted">© <span id="ano"></span> Lanchonete do Ruan. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
