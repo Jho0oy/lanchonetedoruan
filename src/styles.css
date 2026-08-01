@@ -123,8 +123,9 @@
 @utility no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-@utility no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
