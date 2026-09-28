@@ -22,7 +22,10 @@
       <img src="img/logo-ruan.png" alt="Lanchonete do Ruan" width="48" height="48" />
       <span class="brand-name">DO RUAN</span>
     </a>
-    <a class="btn btn-primary btn-sm" data-whatsapp href="#">Pedir Agora</a>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-sm hide-sm" href="#cardapio">Cardápio</a>
+      <button class="btn btn-primary btn-sm" type="button" data-open-cart>🛒 Carrinho <span class="cart-count" data-cart-count>0</span></button>
+    </div>
   </div>
 </header>
 
@@ -34,7 +37,7 @@
         <h1>O SABOR QUE<br /><span class="orange">ACENDE A NOITE</span></h1>
         <p>Hambúrguer artesanal na chapa, pastel crocante na hora, refeições completas e bebidas geladas. Tudo com o jeitinho do bairro.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" data-whatsapp href="#">Fazer Pedido</a>
+          <a class="btn btn-primary" href="#cardapio">Fazer Pedido</a>
           <a class="btn btn-ghost" href="#cardapio">Ver Cardápio</a>
         </div>
         <div class="hero-meta">
@@ -59,6 +62,7 @@
   <section class="section darker" id="cardapio">
     <div class="container">
       <h2>NOSSO CARDÁPIO</h2>
+      <p class="section-sub">Monte seu pedido, revise no carrinho e envie direto pelo WhatsApp. Entrega grátis!</p>
       <div class="filters" id="filtros"></div>
       <div class="grid grid-3" id="cardapio-lista"></div>
     </div>
@@ -92,6 +96,25 @@
     <p class="tiny muted">© <span id="ano"></span> Lanchonete do Ruan. Todos os direitos reservados.</p>
   </div>
 </footer>
+
+<button class="fab" type="button" data-open-cart aria-label="Abrir carrinho">🛒 <span data-cart-total>R$ 0,00</span> <span class="cart-count" data-cart-count>0</span></button>
+
+<div class="overlay" id="overlay" hidden></div>
+
+<aside class="drawer" id="drawer" aria-label="Carrinho" hidden>
+  <div class="drawer-head"><h3>SEU PEDIDO</h3><button class="icon-btn" type="button" data-close aria-label="Fechar">✕</button></div>
+  <div class="drawer-body" id="cart-lines"></div>
+  <div class="drawer-foot">
+    <div class="total-row"><span>Taxa de entrega</span><span>R$ 0,00</span></div>
+    <div class="total-row big"><span>Total</span><span data-cart-total>R$ 0,00</span></div>
+    <button class="btn btn-primary btn-block" type="button" id="btn-checkout">Finalizar pedido</button>
+  </div>
+</aside>
+
+<div class="modal" id="item-modal" role="dialog" aria-modal="true" hidden><div class="modal-card" id="item-modal-body"></div></div>
+<div class="modal" id="checkout-modal" role="dialog" aria-modal="true" hidden><div class="modal-card wide" id="checkout-body"></div></div>
+
+<div class="toast" id="toast" hidden></div>
 
 <script src="script.js"></script>
 </body>
