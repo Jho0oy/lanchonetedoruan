@@ -1,26 +1,38 @@
-# Lanchonete do Ruan
+# 🍔 Lanchonete do Ruan
 
-Crie um site pra uma lanchonete de hambúrguer, pastel e mais com nome Lanchonete do Ruan
+Site comercial e sistema de pedidos online desenvolvido para a
+Lanchonete do Ruan, em São Francisco do Brejão - MA.
 
-This project was built with [Lovable](https://lovable.dev).
+## 🚀 Funcionalidades
 
-**Live app**: https://lanchonetedoruan.lovable.app
+- Cardápio digital
+- Produtos tradicionais e artesanais
+- Adicionais
+- Carrinho de pedidos
+- Checkout
+- Escolha entre entrega e retirada
+- Seleção de bebidas
+- Formas de pagamento
+- Cálculo de troco
+- Pedido enviado diretamente pelo WhatsApp
+- Google Maps
+- Layout responsivo para celular
 
-## Build with Lovable
+## 🛠️ Tecnologias
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c2f44d1a-89e1-4db1-bad0-99e9893bf58d).
+- HTML5
+- CSS3
+- JavaScript
+- Vite
+- Git / GitHub
+- Vercel
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## 🌐 Site
 
-## Development
+https://lanchonetedoruan.vercel.app/site/index.html
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## 📍 Cliente
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Lanchonete do Ruan  
+Rua Bom Jesus, 84 — Trecho Seco  
+São Francisco do Brejão - MA
